@@ -24,7 +24,7 @@ export default function Cosmetology() {
                 Viber
               </Link>
               <Link 
-                href="https://t.me/leraaaaaaaaaaaaaaaaaaaaaaaaa"
+                href="https://t.me/@drvaleriaa"
                 target="_blank"
                 className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-primary text-white hover:bg-primary-light transition-colors"
               >
@@ -58,7 +58,7 @@ export default function Cosmetology() {
                 transition={{ duration: 0.8, delay: 0.2 }}
               >
                 <Link 
-                  href="https://t.me/leraaaaaaaaaaaaaaaaaaaaaaaaa"
+                  href="https://t.me/@drvaleriaa"
                   target="_blank" 
                   className="inline-flex items-center gap-2 px-8 py-3 bg-accent text-white rounded-full hover:bg-accent-light transition-colors text-lg"
                 >
@@ -814,7 +814,7 @@ export default function Cosmetology() {
                   Viber
                 </Link>
                 <Link
-                    href="https://t.me/leraaaaaaaaaaaaaaaaaaaaaaaaa"
+                    href="https://t.me/@drvaleriaa"
                     target="_blank"
                     className="flex items-center gap-3 px-4 py-3 bg-[#0088cc] text-white rounded-full hover:bg-opacity-90 transition-colors w-full justify-center"
                 >
@@ -868,7 +868,7 @@ export default function Cosmetology() {
                     className="mt-6"
                 >
                   <Link
-                      href="https://t.me/leraaaaaaaaaaaaaaaaaaaaaaaaa"
+                      href="https://t.me/@drvaleriaa"
                       target="_blank"
                       className="inline-flex items-center gap-2 px-8 py-4 bg-accent text-white rounded-full hover:bg-accent-light transition-colors text-lg w-full justify-center"
                   >

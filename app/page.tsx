@@ -27,7 +27,7 @@ export default function Home() {
                 Viber
               </Link>
               <Link 
-                href="https://t.me/leraaaaaaaaaaaaaaaaaaaaaaaaa"
+                href="https://t.me/@drvaleriaa"
                 target="_blank"
                 className="flex items-center gap-2 px-2 py-1 text-xs sm:text-xl sm:px-4 sm:py-2 rounded-full bg-primary text-white hover:bg-primary-light transition-colors"
               >

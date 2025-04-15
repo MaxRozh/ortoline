@@ -4,12 +4,12 @@ import { Playfair_Display, Montserrat } from 'next/font/google';
 import Link from "next/link";
 import { MessageSquare, Send } from "lucide-react";
 
-const playfair = Playfair_Display({ 
+const playfair = Playfair_Display({
   subsets: ['latin', 'cyrillic'],
   variable: '--font-playfair',
 });
 
-const montserrat = Montserrat({ 
+const montserrat = Montserrat({
   subsets: ['latin', 'cyrillic'],
   variable: '--font-montserrat',
 });
@@ -22,6 +22,15 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode; }>) {
   return (
     <html lang="uk">
+      <head>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="theme-color" content="#ffffff" />
+      </head>
       <body className={`${montserrat.variable} ${playfair.variable} ${montserrat.className} bg-[#FDF8F3]`}>
         {children}
 
@@ -122,11 +131,11 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
                   </li>
                   <li className="flex justify-between">
                     <span>Субота:</span>
-                    <span style={{ textAlign: 'end' }}>10:00 - 18:00</span>
+                    <span style={{ textAlign: 'end' }}>Вихідний</span>
                   </li>
                   <li className="flex justify-between">
                     <span>Неділя:</span>
-                    <span style={{ textAlign: 'end' }}>Вихідний</span>
+                    <span style={{ textAlign: 'end' }}>10:00 - 18:00</span>
                   </li>
                 </ul>
               </div>
@@ -144,11 +153,22 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
                     <MessageSquare size={24} />
                   </Link>
                   <Link
-                      href="https://t.me/leraaaaaaaaaaaaaaaaaaaaaaaaa"
+                      href="https://t.me/@drvaleriaa"
                       target="_blank"
                       className="text-gray-600 hover:text-primary transition-colors"
                   >
                     <Send size={24} />
+                  </Link>
+                  <Link
+                      href="https://www.instagram.com/dr.she_vchuk?igsh=MWZ6ZzM0YWN6M3MzOA=="
+                      target="_blank"
+                      className="text-gray-600 hover:text-[#E1306C] transition-colors"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                      <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                    </svg>
                   </Link>
                 </div>
                 <div className="text-gray-600 text-sm">

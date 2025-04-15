@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { MessageSquare, Send, ArrowLeft, ChevronRight, CheckCircle2 } from "lucide-react";
+import { MessageSquare, Send, ArrowLeft, ChevronRight, CheckCircle2, MapPin } from "lucide-react";
 import Link from "next/link";
 
 export default function Orthodontics() {
@@ -23,8 +23,8 @@ export default function Orthodontics() {
                 <MessageSquare size={20} />
                 Viber
               </Link>
-              <Link 
-                href="https://t.me/leraaaaaaaaaaaaaaaaaaaaaaaaa"
+              <Link
+                href="https://t.me/@drvaleriaa"
                 target="_blank"
                 className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-primary text-white hover:bg-primary-light transition-colors"
               >
@@ -57,9 +57,9 @@ export default function Orthodontics() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
               >
-                <Link 
-                  href="https://t.me/leraaaaaaaaaaaaaaaaaaaaaaaaa"
-                  target="_blank" 
+                <Link
+                  href="https://t.me/@drvaleriaa"
+                  target="_blank"
                   className="inline-flex items-center gap-2 px-8 py-3 bg-accent text-white rounded-full hover:bg-accent-light transition-colors text-lg"
                 >
                   Записатися на консультацію
@@ -137,6 +137,150 @@ export default function Orthodontics() {
               </ul>
             </motion.div>
           </div>
+
+          {/* Instagram Gallery */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            viewport={{ once: true }}
+            className="mt-16 mb-16"
+          >
+            <div className="text-center mb-8">
+              <h3 className="text-2xl font-bold text-primary mb-3">Наші роботи в Instagram</h3>
+              <p className="text-lg text-gray-600">Слідкуйте за нами в Instagram, щоб бачити більше результатів</p>
+              <Link
+                href="https://www.instagram.com/dr.she_vchuk?igsh=MWZ6ZzM0YWN6M3MzOA=="
+                target="_blank"
+                className="inline-flex items-center gap-2 text-accent hover:text-accent-light transition-colors mt-2"
+              >
+                @dr.she_vchuk
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                </svg>
+              </Link>
+            </div>
+
+            <div className="grid grid-cols-2 gap-4 max-w-3xl mx-auto">
+              {/* Video 1 (Top Left) */}
+              <Link
+                href="https://www.instagram.com/dr.she_vchuk?igsh=MWZ6ZzM0YWN6M3MzOA=="
+                target="_blank"
+                className="relative group overflow-hidden rounded-xl aspect-square bg-white shadow-md"
+              >
+                <div className="w-full h-full relative overflow-hidden">
+                  <video
+                    src="/ortho/insta-video-1.mp4"
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                  />
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <div className="absolute bottom-4 left-4 right-4 text-white">
+                    <p className="text-sm font-medium">Результат ортодонтичного лікування</p>
+                  </div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="absolute top-4 right-4">
+                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                  </svg>
+                </div>
+              </Link>
+
+              {/* Photo 1 (Top Right) */}
+              <Link
+                href="https://www.instagram.com/dr.she_vchuk?igsh=MWZ6ZzM0YWN6M3MzOA=="
+                target="_blank"
+                className="relative group overflow-hidden rounded-xl aspect-square bg-white shadow-md"
+              >
+                <img
+                  src="/ortho/insta-1.jpg"
+                  alt="Instagram post"
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <div className="absolute bottom-4 left-4 right-4 text-white">
+                    <p className="text-sm font-medium">Брекет-система для ідеальної посмішки</p>
+                  </div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="absolute top-4 right-4">
+                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                  </svg>
+                </div>
+              </Link>
+
+              {/* Photo 2 (Bottom Left) */}
+              <Link
+                href="https://www.instagram.com/dr.she_vchuk?igsh=MWZ6ZzM0YWN6M3MzOA=="
+                target="_blank"
+                className="relative group overflow-hidden rounded-xl aspect-square bg-white shadow-md"
+              >
+                <img
+                  src="/ortho/insta-2.png"
+                  alt="Instagram post"
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <div className="absolute bottom-4 left-4 right-4 text-white">
+                    <p className="text-sm font-medium">Корекція прикусу за 14 місяців</p>
+                  </div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="absolute top-4 right-4">
+                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                  </svg>
+                </div>
+              </Link>
+
+              {/* Video 2 (Bottom Right) */}
+              <Link
+                href="https://www.instagram.com/dr.she_vchuk?igsh=MWZ6ZzM0YWN6M3MzOA=="
+                target="_blank"
+                className="relative group overflow-hidden rounded-xl aspect-square bg-white shadow-md"
+              >
+                <div className="w-full h-full relative overflow-hidden">
+                  <video
+                    src="/ortho/insta-video-2.mp4"
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                  />
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <div className="absolute bottom-4 left-4 right-4 text-white">
+                    <p className="text-sm font-medium">Вирівнювання зубів за допомогою брекетів</p>
+                  </div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="absolute top-4 right-4">
+                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                  </svg>
+                </div>
+              </Link>
+            </div>
+
+            <div className="text-center mt-8">
+              <Link
+                href="https://www.instagram.com/dr.she_vchuk?igsh=MWZ6ZzM0YWN6M3MzOA=="
+                target="_blank"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-accent text-white rounded-full hover:bg-accent-light transition-colors"
+              >
+                Більше в Instagram
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </Link>
+            </div>
+          </motion.div>
 
           {/* Success Story */}
           <motion.div
@@ -601,6 +745,7 @@ export default function Orthodontics() {
               <motion.button
                   whileHover={{ scale: 1.02 }}
                   className="w-full px-6 py-3 bg-accent text-white rounded-full hover:bg-accent-light transition-colors"
+                  onClick={() => window.open('https://t.me/@drvaleriaa', '_blank')}
               >
                 Записатись на консультацію
               </motion.button>
@@ -632,6 +777,7 @@ export default function Orthodontics() {
               <motion.button
                   whileHover={{ scale: 1.02 }}
                   className="w-full px-6 py-3 bg-accent text-white rounded-full hover:bg-accent-light transition-colors"
+                  onClick={() => window.open('https://t.me/@drvaleriaa', '_blank')}
               >
                 Записатись на консультацію
               </motion.button>
@@ -663,6 +809,7 @@ export default function Orthodontics() {
               <motion.button
                   whileHover={{ scale: 1.02 }}
                   className="w-full px-6 py-3 bg-accent text-white rounded-full hover:bg-accent-light transition-colors"
+                  onClick={() => window.open('https://t.me/@drvaleriaa', '_blank')}
               >
                 Записатись на консультацію
               </motion.button>
@@ -706,12 +853,24 @@ export default function Orthodontics() {
                   Viber
                 </Link>
                 <Link
-                    href="https://t.me/leraaaaaaaaaaaaaaaaaaaaaaaaa"
+                    href="https://t.me/@drvaleriaa"
                     target="_blank"
                     className="flex items-center gap-3 px-4 py-3 bg-[#0088cc] text-white rounded-full hover:bg-opacity-90 transition-colors w-full justify-center"
                 >
                   <Send size={24} />
                   Telegram
+                </Link>
+                <Link
+                    href="https://www.instagram.com/dr.she_vchuk?igsh=MWZ6ZzM0YWN6M3MzOA=="
+                    target="_blank"
+                    className="flex items-center gap-3 px-4 py-3 bg-gradient-to-r from-[#833AB4] via-[#FD1D1D] to-[#FCAF45] text-white rounded-full hover:bg-opacity-90 transition-colors w-full justify-center"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                  </svg>
+                  Instagram
                 </Link>
               </div>
             </motion.div>
@@ -755,12 +914,16 @@ export default function Orthodontics() {
                   </svg>
                   <span className="text-lg">Пн-Сб: 9:00 - 20:00</span>
                 </div>
+                <div className="flex items-center gap-3">
+                  <MapPin className="text-primary" size={24} />
+                  <span className="text-lg">вул. Туровська, 29, Київ</span>
+                </div>
                 <motion.div
                     whileHover={{scale: 1.02}}
                     className="mt-6"
                 >
                   <Link
-                      href="https://t.me/leraaaaaaaaaaaaaaaaaaaaaaaaa"
+                      href="https://t.me/@drvaleriaa"
                       target="_blank"
                       className="inline-flex items-center gap-2 px-8 py-4 bg-accent text-white rounded-full hover:bg-accent-light transition-colors text-lg w-full justify-center"
                   >
@@ -779,6 +942,29 @@ export default function Orthodontics() {
               </div>
             </motion.div>
           </div>
+
+          {/* Google Map */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="mt-12 max-w-4xl mx-auto"
+          >
+            <div className="bg-cream rounded-2xl overflow-hidden shadow-md">
+              <div className="w-full h-[400px]" style={{borderRadius: '1rem'}}>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2539.226783197605!2d30.51153187713552!3d50.474121671596734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce116fd14f25%3A0x7759d0dfae3516bc!2z0YPQuy4g0KLRg9GA0L7QstGB0LrQsNGPLCAyOSwg0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2sro!4v1744567178017!5m2!1sru!2sro"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                />
+              </div>
+            </div>
+          </motion.div>
 
           {/*<motion.div*/}
           {/*    initial={{ opacity: 0, y: 20 }}*/}

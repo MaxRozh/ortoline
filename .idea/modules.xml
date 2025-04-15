@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/ortho.iml" filepath="$PROJECT_DIR$/.idea/ortho.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/ortoline.iml" filepath="$PROJECT_DIR$/.idea/ortoline.iml" />
     </modules>
   </component>
 </project>
